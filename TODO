@@ -1,0 +1,4 @@
+Problem : TODO
+Factory pattern is used to hide logic of object creation. But still main method is able to call Circle c = new Circle();
+I don't want any class to create object of circle class if they need they can use factory class.
+
