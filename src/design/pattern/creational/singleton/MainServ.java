@@ -69,6 +69,16 @@ public class MainServ
 		 * 
 		 */
 		  
+		// By Enum it is unbreakable by reflection
+		SingletonObjectByEnum.instance.setName("eeeeee");
+		System.out.println(SingletonObjectByEnum.instance.getName());
+		System.out.println(SingletonObjectByEnum.instance.hashCode());
+		System.out.println(SingletonObjectByEnum.instance.hashCode());
 		
+		SingletonObjectByEnum en = SingletonObjectByEnum.instance;
+		SingletonObjectByEnum en1 = SingletonObjectByEnum.instance;
+		System.out.println(en.hashCode());
+		System.out.println(en1.hashCode());
+		System.out.println("----------- Drawbacks: it does not support lazy initilization.--------------");
 	}
 }
